@@ -1,0 +1,32 @@
+Парты.
+m = int(input()) 
+n = int(input()) 
+k = int(input()) 
+print(m//2+m%2+n//2+n%2+k//2+k%2)
+
+Часы-3
+alpha = float(input())
+hour = 30
+minute = hour/60
+second = minute/60
+h = alpha//hour
+m = alpha % 30 * 2
+s = alpha % 0.5*120
+print(int(h), int(m), int(s))
+
+Проценты
+a = int(input())
+b = int(input())
+c = int(input()) 
+total = b*100+c
+proc = total+(total*a/100)
+m = int(proc // 100)   
+n = int(proc % 100)     
+print(m, n)
+
+Лесенка
+n = int(input()) 
+for i in range(n):
+    for j in range(1, i+2):
+        print(j, end='')
+    print()
